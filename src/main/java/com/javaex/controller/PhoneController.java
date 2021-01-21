@@ -85,18 +85,17 @@ public class PhoneController {
 	// http://localhost:8088/phonebook3/phone/update?id=[]
 	// 수정 @RequestParam
 	/*
-	 * @RequestMapping(value = "/update", method = { RequestMethod.GET,
-	 * RequestMethod.POST }) public String update(@RequestParam("id") int
-	 * person_id, @RequestParam("name") String name, @RequestParam("hp") String
-	 * hp, @RequestParam("company") String company) { System.out.println("update");
+	 * @RequestMapping(value = "/update", method = { RequestMethod.GET, RequestMethod.POST })
+	 * public String update(@RequestParam("id") int person_id, @RequestParam("name") String name, @RequestParam("hp") String hp, @RequestParam("company") String company) {
+	 * 		System.out.println("update");
 	 * 
-	 * PersonVo pVo = new PersonVo(person_id, name, hp, company);
+	 * 		PersonVo pVo = new PersonVo(person_id, name, hp, company);
+	 * 		PhoneDao pDao = new PhoneDao(); pDao.dbUpd(pVo);
 	 * 
-	 * PhoneDao pDao = new PhoneDao(); pDao.dbUpd(pVo);
+	 * 		System.out.println(pVo.toString());
 	 * 
-	 * System.out.println(pVo.toString());
-	 * 
-	 * return "redirect:/phone/list"; }
+	 * 		return "redirect:/phone/list";
+	 * }
 	 */
 
 	// http://localhost:8088/phonebook3/phone/update?id=[]
@@ -115,15 +114,17 @@ public class PhoneController {
 	// http://localhost:8088/phonebook3/phone/delete?id=[]
 	// 삭제
 	/*
-	 * @RequestMapping(value = "/delete", method = { RequestMethod.GET,
-	 * RequestMethod.POST })// @RequestMapping("/delete") public String
-	 * delete(@RequestParam("id") int person_id) { System.out.println("delete");
+	 * @RequestMapping(value = "/delete", method = { RequestMethod.GET, RequestMethod.POST })// @RequestMapping("/delete")
+	 * public String delete(@RequestParam("id") int person_id) {
+	 * 		System.out.println("delete");
 	 * 
-	 * PhoneDao pDao = new PhoneDao(); pDao.dbDle(person_id);
+	 * 		PhoneDao pDao = new PhoneDao();
+	 * 		pDao.dbDle(person_id);
 	 * 
-	 * System.out.println(person_id);
+	 * 		System.out.println(person_id);
 	 * 
-	 * return "redirect:/phone/list"; }
+	 * 		return "redirect:/phone/list";
+	 * }
 	 */
 
 	// http://localhost:8088/phonebook3/phone/delete?id=[]
